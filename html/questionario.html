@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Envie suas dúvidas sobre mitologia grega.">
+  <title>Questionário | Mitologia Grega</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/mitologia.css" rel="stylesheet">
+</head>
+<body>
+<!-- Menu de navegação: os links continuam abrindo as páginas separadas do projeto -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-mitologia shadow">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <span class="logo-marca">Ω</span><span class="fw-bold">MITOLOGIA <span class="marca-destaque">GREGA</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="oquee.html">O que é?</a></li>
+        <li class="nav-item"><a class="nav-link" href="origem.html">Origem e história</a></li>
+        <li class="nav-item"><a class="nav-link" href="deuses.html">Deuses</a></li>
+        <li class="nav-item"><a class="nav-link active" href="questionario.html" aria-current="page">Questionário</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="pagina-interna">
+  <!-- Título da página -->
+  <section class="faixa-titulo">
+    <div class="container py-5">
+      <span class="subtitulo">Compartilhe sua curiosidade</span>
+      <h1 class="display-4 fw-bold">Questionário</h1>
+      <p class="lead col-lg-8">Tem alguma dúvida sobre mitologia grega? Envie sua pergunta!</p>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9 col-xl-8">
+        <div class="card shadow-sm border-0 formulario-caixa">
+          <div class="card-header p-3" style="background-color: rgba(198, 161, 91, .18);">
+            <h2 class="h4 mb-0 titulo-secao">Formulário de Dúvidas</h2>
+          </div>
+          <div class="card-body p-4">
+            <p class="text-body-secondary mb-4">Preencha as informações abaixo e escreva sua dúvida sobre mitologia grega.</p>
+
+            <!-- novalidate permite que o JavaScript controle quando as mensagens de validação aparecem -->
+            <form id="formDuvidas" action="#" method="post" novalidate>
+              <!-- Informações gerais -->
+              <fieldset class="mb-4">
+                <legend class="fs-5 fw-semibold mb-3">Informações Gerais</legend>
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome completo:</label>
+                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Ex.: Ariella dos Santos" required>
+                  <div class="invalid-feedback">Informe pelo menos duas palavras no nome.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="idade" class="form-label">Idade:</label>
+                  <input type="text" class="form-control" id="idade" name="idade" placeholder="Ex.: 18" inputmode="numeric" maxlength="3" required>
+                  <div class="invalid-feedback">Informe apenas números inteiros entre 4 e 95 anos.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail:</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Ex.: ariella@email.com" required>
+                  <div class="invalid-feedback">Insira um e-mail válido, como maria@email.com.</div>
+                </div>
+              </fieldset>
+
+              <!-- Pergunta sobre como a pessoa conheceu o site -->
+              <div class="mb-4">
+                <label for="plataformas" class="form-label fw-semibold">Como você ouviu falar de nosso site?</label>
+                <select name="plataformas" id="plataformas" class="form-select" required>
+                  <option value="" selected disabled>Selecione uma opção</option>
+                  <option value="amigo">Ouviu de um amigo ou conhecido</option>
+                  <option value="redes">Instagram/Facebook</option>
+                  <option value="yt">YouTube</option>
+                  <option value="google">Google</option>
+                  <option value="outro">Outra forma</option>
+                </select>
+                <div class="invalid-feedback">Selecione uma opção.</div>
+              </div>
+
+              <!-- Campo de dúvida -->
+              <div class="mb-4">
+                <label for="duvida" class="form-label fw-semibold">Escreva sua dúvida aqui:</label>
+                <textarea class="form-control" id="duvida" name="duvida" rows="7" placeholder="Ex.: Qual é a história de Atena?" required minlength="10"></textarea>
+                <div class="invalid-feedback">A dúvida deve conter pelo menos 10 caracteres.</div>
+              </div>
+
+              <!-- Botões para enviar ou limpar os campos -->
+              <div class="d-flex flex-wrap gap-2">
+                <button type="submit" class="btn btn-dourado">Enviar</button>
+                <button type="reset" class="btn btn-outline-secondary">Limpar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Bootstrap: aparece somente quando todos os campos obrigatórios estão válidos -->
+  <div class="modal fade" id="modalSucesso" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-mito">
+        <div class="modal-header border-0">
+          <h2 class="modal-title h4" id="tituloModal">Dúvida enviada com sucesso!</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">Obrigado por participar! Suas informações foram validadas com sucesso.</div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-dourado" data-bs-dismiss="modal">Concluir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="rodape mt-auto">
+  <div class="container text-center py-4">
+    <div class="logo-marca mx-auto mb-2">Ω</div>
+    <p class="mb-1 fw-semibold">Mitologia Grega</p>
+    <p class="small mb-0">Um portal para conhecer os mitos, as histórias e as divindades da Grécia Antiga.</p>
+    <p class="small mt-3 mb-0 text-white-50">@Ariella Frandoloso dos Santos. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<!-- Validação do formulário -->
+<script src="../js/mitologia.js"></script>
+</body>
+</html>

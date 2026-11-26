@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça a mitologia grega, sua origem, seus deuses e suas narrativas.">
+  <title>Início | Mitologia Grega</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos personalizados do projeto -->
+  <link href="../css/mitologia.css" rel="stylesheet">
+</head>
+<body>
+<!-- Menu de navegação responsivo do Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-mitologia shadow">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <span class="logo-marca">Ω</span><span class="fw-bold">MITOLOGIA <span class="marca-destaque">GREGA</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="oquee.html">O que é?</a></li>
+        <li class="nav-item"><a class="nav-link" href="origem.html">Origem e história</a></li>
+        <li class="nav-item"><a class="nav-link" href="deuses.html">Deuses</a></li>
+        <li class="nav-item"><a class="nav-link" href="questionario.html">Questionário</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <!-- Banner principal em formato de carrossel Bootstrap -->
+  <section id="carouselMitologia" class="carousel slide hero" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselMitologia" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Primeiro slide"></button>
+      <button type="button" data-bs-target="#carouselMitologia" data-bs-slide-to="1" aria-label="Segundo slide"></button>
+      <button type="button" data-bs-target="#carouselMitologia" data-bs-slide-to="2" aria-label="Terceiro slide"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/gregos.jpg" class="d-block w-100 hero-img" alt="Representação da Grécia Antiga">
+        <div class="carousel-caption text-start"><span class="etiqueta">Explore os mitos</span><h1 class="display-3 fw-bold">O mundo da <em>Mitologia Grega</em></h1><p class="lead">Deuses, heróis e narrativas que atravessaram os séculos.</p><a href="oquee.html" class="btn btn-dourado btn-lg">Começar a explorar</a></div>
+      </div>
+      <div class="carousel-item">
+        <img src="../img/Zeus pintura.jpg" class="d-block w-100 hero-img" alt="Pintura representando Zeus">
+        <div class="carousel-caption"><span class="etiqueta">Poder do Olimpo</span><h2 class="display-4 fw-bold">Conheça os deuses</h2><p class="lead">Divindades com poderes e personalidades humanas.</p><a href="deuses.html" class="btn btn-dourado btn-lg">Ver divindades</a></div>
+      </div>
+      <div class="carousel-item">
+        <img src="../img/Caos.jpg" class="d-block w-100 hero-img" alt="Representação artística do Caos primordial">
+        <div class="carousel-caption text-end"><span class="etiqueta">Do princípio de tudo</span><h2 class="display-4 fw-bold">Uma origem fascinante</h2><p class="lead">Da era primordial à ascensão dos deuses do Olimpo.</p><a href="origem.html" class="btn btn-dourado btn-lg">Descobrir a história</a></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMitologia" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Anterior</span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselMitologia" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Próximo</span></button>
+  </section>
+
+  <!-- Container centraliza o conteúdo e mantém espaçamento responsivo -->
+  <section class="container secao-intro py-5 reveal">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="subtitulo">Bem-vindo ao Olimpo</span>
+        <h2 class="titulo-secao">Histórias que explicavam o mundo</h2>
+        <p class="texto-destaque">A mitologia grega reúne mitos e ensinamentos dos antigos gregos sobre a origem e a natureza do mundo, a vida e as atividades de divindades, heróis e criaturas mitológicas.</p>
+        <p>Essas narrativas representam uma forma de compreender os fenômenos da natureza e a complexidade da experiência humana. Foram transmitidas pela tradição oral, pela poesia e pela arte.</p>
+        <a href="oquee.html" class="link-dourado">Entenda o que é mitologia grega <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="col-lg-5"><img src="../img/mitologia-grega-1.jpg" class="img-fluid imagem-editorial" alt="Imagem relacionada à mitologia grega"></div>
+    </div>
+  </section>
+
+  <!-- Cards Bootstrap organizam os principais caminhos do site -->
+  <section class="secao-cards py-5">
+    <div class="container">
+      <div class="text-center mb-4 reveal"><span class="subtitulo">Conheça mais</span><h2 class="titulo-secao">Explore este universo</h2><p class="text-muted">Escolha um tema e aprofunde sua leitura.</p></div>
+      <div class="row g-4">
+        <div class="col-md-4 reveal"><article class="card card-mito h-100"><img src="../img/mitologia.jpg" class="card-img-top" alt="Imagem sobre mitologia grega"><div class="card-body d-flex flex-column"><h3 class="h4 card-title">O que é?</h3><p class="card-text">Conheça as características dos mitos e como essas histórias eram transmitidas.</p><a href="oquee.html" class="btn btn-outline-dourado mt-auto">Conhecer</a></div></article></div>
+        <div class="col-md-4 reveal"><article class="card card-mito h-100"><img src="../img/Cronos.jpg" class="card-img-top" alt="Representação de Cronos"><div class="card-body d-flex flex-column"><h3 class="h4 card-title">Origem e história</h3><p class="card-text">Acompanhe as fases que vão do Caos primordial à ascensão do Olimpo.</p><a href="origem.html" class="btn btn-outline-dourado mt-auto">Descobrir</a></div></article></div>
+        <div class="col-md-4 reveal"><article class="card card-mito h-100"><img src="../img/deuses-gregos.webp" class="card-img-top" alt="Representação dos deuses gregos"><div class="card-body d-flex flex-column"><h3 class="h4 card-title">Principais deuses</h3><p class="card-text">Veja quem são algumas das divindades mais importantes da mitologia.</p><a href="deuses.html" class="btn btn-outline-dourado mt-auto">Ver deuses</a></div></article></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chamada para o formulário; botão abre o modal do Bootstrap -->
+  <section class="container py-5 text-center reveal"><div class="convite p-4 p-md-5"><span class="subtitulo">Participe</span><h2 class="titulo-secao">Sua jornada pelo Olimpo começa aqui</h2><p>Envie suas dúvidas e conte qual divindade despertou sua curiosidade.</p><a class="btn btn-dourado" href="questionario.html">Ir para o questionário</a></div></section>
+</main>
+<!-- Rodapé compartilhado pelas páginas -->
+<footer class="rodape mt-auto">
+  <div class="container text-center py-4">
+    <div class="logo-marca mx-auto mb-2">Ω</div>
+    <p class="mb-1 fw-semibold">Mitologia Grega</p>
+    <p class="small mb-0">Um portal para conhecer os mitos, as histórias e as divindades da Grécia Antiga.</p>
+    <p class="small mt-3 mb-0 text-white-50">@Ariella Frandoloso dos Santos. Todos os direitos reservados.</p>
+  </div>
+</footer>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/mitologia.js"></script>
+</body>
+</html>
