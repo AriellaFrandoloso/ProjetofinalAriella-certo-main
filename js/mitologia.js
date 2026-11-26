@@ -1,6 +1,6 @@
 /* =====================================================
    JAVASCRIPT DO SITE DE MITOLOGIA GREGA
-   - Limita a idade a números inteiros entre 4 e 110.
+   - Limita a idade a números inteiros entre 4 e 95.
    - Confere se o nome tem pelo menos duas palavras.
    - Valida e-mail, origem do acesso e dúvida.
    - Abre o modal do Bootstrap quando tudo está correto.
@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const nomeValido = campoNome.value.trim().split(/\s+/).filter(Boolean).length >= 2;
     campoNome.setCustomValidity(nomeValido ? '' : 'Informe nome e sobrenome.');
 
-    // Idade deve ser um número inteiro de 4 a 110.
+    // Idade deve ser um número inteiro de 4 a 95.
     const idade = Number(campoIdade.value);
-    const idadeValida = /^\d+$/.test(campoIdade.value) && idade >= 4 && idade <= 110;
-    campoIdade.setCustomValidity(idadeValida ? '' : 'Informe uma idade entre 4 e 110 anos.');
+    const idadeValida = /^\d+$/.test(campoIdade.value) && idade >= 4 && idade <= 95;
+    campoIdade.setCustomValidity(idadeValida ? '' : 'Informe uma idade entre 4 e 95 anos.');
 
     // A dúvida precisa ter pelo menos 10 caracteres.
     campoDuvida.setCustomValidity(campoDuvida.value.trim().length >= 10 ? '' : 'Escreva uma dúvida com pelo menos 10 caracteres.');
